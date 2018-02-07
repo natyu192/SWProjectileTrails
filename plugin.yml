@@ -1,0 +1,7 @@
+name: SWProjectileTrail
+version: 1.0
+main: me.nucha.swprojectiletrail.SWProjectileTrail
+commands:
+  swprojectiletrail:
+    permission: swkilleffect.swkilleffect
+    aliases: [swpt, swptrail]
