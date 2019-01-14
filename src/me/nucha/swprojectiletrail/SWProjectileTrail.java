@@ -3,16 +3,16 @@ package me.nucha.swprojectiletrail;
 import java.io.File;
 import java.io.IOException;
 
+import org.bukkit.Bukkit;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.plugin.java.JavaPlugin;
+
 import me.nucha.swprojectiletrail.commands.CommandSWProjectileTrail;
 import me.nucha.swprojectiletrail.gui.GuiProjectileTrailSelector;
 import me.nucha.swprojectiletrail.listeners.ProjectileListener;
 import me.nucha.swprojectiletrail.manager.ProjectileTrailManager;
 import me.nucha.swprojectiletrail.utils.ConfigUtil;
-
-import org.bukkit.Bukkit;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.plugin.java.JavaPlugin;
 
 public class SWProjectileTrail extends JavaPlugin {
 
@@ -83,7 +83,7 @@ public class SWProjectileTrail extends JavaPlugin {
 		return projectileTrailManager;
 	}
 
-	public GuiProjectileTrailSelector getGuiKillEffectSelector() {
+	public GuiProjectileTrailSelector getGuiProjectileTrailSelector() {
 		return guiProjectileTrailSelector;
 	}
 

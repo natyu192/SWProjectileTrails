@@ -1,13 +1,13 @@
 package me.nucha.swprojectiletrail.commands;
 
-import me.nucha.swprojectiletrail.SWProjectileTrail;
-import me.nucha.swprojectiletrail.utils.ConfigUtil;
-
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+
+import me.nucha.swprojectiletrail.SWProjectileTrail;
+import me.nucha.swprojectiletrail.utils.ConfigUtil;
 
 public class CommandSWProjectileTrail implements CommandExecutor {
 
@@ -26,7 +26,7 @@ public class CommandSWProjectileTrail implements CommandExecutor {
 					return true;
 				}
 				Player p = (Player) sender;
-				plugin.getGuiKillEffectSelector().open(p);
+				plugin.getGuiProjectileTrailSelector().open(p);
 				return true;
 			}
 			if (args[0].equalsIgnoreCase("reload")) {
@@ -41,7 +41,7 @@ public class CommandSWProjectileTrail implements CommandExecutor {
 			if (args[0].equalsIgnoreCase("gui")) {
 				Player t = Bukkit.getPlayer(args[1]);
 				if (t != null) {
-					plugin.getGuiKillEffectSelector().open(t);
+					plugin.getGuiProjectileTrailSelector().open(t);
 				}
 				return true;
 			}
